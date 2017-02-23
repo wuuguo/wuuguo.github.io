@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="utf-8">
+  
+<title>Hello Hexo! | 無果</title>
+<link rel="icon" href="/image/favicon.ico">
+<link rel="stylesheet" href="/css/main.css">
+  
+	</head>
+
+	<body>
+		<header>
+	<ul>
+		<li><a href="/">首頁</a></li>
+		<li><a href="/archives">歸檔</a></li>
+		<li><a href="/about">關於</a></li>
+	</ul>
+</header>
+		<article class="content">
+	<h1>Hello Hexo!</h1>
+	<p class="author">
+	<time>2017-02-23</time> &copy; 王厶厶</p>
+	<div class="summary"><p>從 Wordpress 到 Pelican，再從 Pelican 到 Hexo，一次次折騰，終於在這裏停留了下來。以前的網站由於種種原因始終沒有持續下去，這次的這個博客我會盡力維護下去，力求在追求高質量的同時保證持續性。好了，照例，第一篇文章記錄一下博客的搭建過程吧！</p></div>
+	<h2 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h2><ol>
+<li>安裝 Git 和 Node.js（在 Arch Linux 上）</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pacman -S git nodejs npm</div></pre></td></tr></table></figure>
+<ol>
+<li>安裝 Hexo</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<ol>
+<li>建立</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init &lt;blog name&gt;</div><div class="line"><span class="built_in">cd</span> &lt;blog name&gt;</div><div class="line">npm install</div></pre></td></tr></table></figure>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>修改 <code>_config.yml</code> 文件。</p>
+<ul>
+<li>部署設置</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">	type: git</div><div class="line">	repo:</div><div class="line">		github: &lt;repo url&gt;, [branch]</div><div class="line">		coding: &lt;repo url&gt;, [branch]</div></pre></td></tr></table></figure>
+<h2 id="開始寫作"><a href="#開始寫作" class="headerlink" title="開始寫作"></a>開始寫作</h2><ul>
+<li>新建</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new [layout] &lt;title&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>生成</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
+<ul>
+<li>啓動服務器</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure>
+<ul>
+<li>部署</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
+</article>
+
+		<footer>
+	
+	<p>This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
+	
+</footer>
+	</body>
+
+</html>
