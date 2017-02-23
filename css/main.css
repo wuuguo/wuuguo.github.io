@@ -162,10 +162,10 @@ blockquote {
     padding-left: 10px;
     border: #080 thin dotted;
     border-left: #080 5px solid;
-
+}
 /* index page setting */
 
-section .subtitle {
+p.subtitle {
 	text-align: center;
 	border-bottom: #aaa thin dashed;
 	margin-bottom: 0;
