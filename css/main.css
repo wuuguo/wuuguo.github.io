@@ -82,6 +82,11 @@ h3 {
 	font-weight: 500;
 	margin-top: 10px;
 }
+h4 {
+	font-size: 105%;
+	font-weight: 500;
+	margin-top: 10px;
+}
 a {
 	color: #080;
 	text-decoration: none;
